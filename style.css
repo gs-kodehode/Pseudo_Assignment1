@@ -1,0 +1,42 @@
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+ul li:hover {
+  border: 1px solid red;
+}
+
+ul li:active {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+ul li:focus {
+  background-color: green;
+}
+
+ul li {
+  outline: none;
+}
+
+ul li:nth-child(odd) {
+  color: grey;
+}
+
+ul li::before {
+  content: ">>";
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
